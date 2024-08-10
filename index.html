@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmita Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poetsen One", sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/img5.jpg');
+            /*in url u have to give path like : folder/filename.extensions*/
+            height: 500px;
+            width: 500px;
+            color: rgb(253, 17, 155);
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 6px;
+            left: 18px;
+
+        }
+
+        .mid {
+            /* border: 2px solid rgb(25, 241, 97); */
+            display: block;
+            width: 115%;
+            margin: 4px auto;
+            position: relative;
+            left: 315px;
+        }
+
+
+        .right {
+            /* border: 2px solid rgb(255, 238, 0); */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: red;
+            text-decoration: none;
+            padding: 34px 14px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(243, 202, 19);
+            text-decoration: underline;
+
+        }
+
+        img {
+            height: 63px;
+            width: 111px;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            font-family: "Poetsen One", sans-serif;
+            background-color: antiquewhite;
+            color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: rgb(243, 202, 19);
+            text-decoration: underline;
+
+        }
+
+        .container {
+            font-family: "Poetsen One", sans-serif;
+            background-color: rgb(14, 13, 13);
+            color: white;
+            border: 2px solid rgb(44, 236, 26);
+            margin: 127px 64px;
+            padding: 85px 65px;
+            width: 105%;
+            border-radius: 9px;
+
+        }
+
+        .container:hover {
+            color: rgb(243, 202, 19);
+            text-decoration: italic;
+        }
+
+        .formgroup input {
+            text-align: center;
+            font-family: "Poetsen One", sans-serif;
+            display: block;
+            border: 2px solid rgb(183, 226, 25);
+            margin: 2px 2px;
+            padding: 5px 5px;
+            width: 60%;
+            border-radius: 9px;
+
+
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            text-align: center;
+            font-family: "Poetsen One", sans-serif;
+            margin: auto;
+            width: 20%;
+            border-radius: 9px;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header part of our webppage -->
+
+    <!-- first make the division or parts of ur webpage 
+    and also make their parts for ex- first i make my website into diff parts like header,subj.footer 
+    and then makes header into diff parts like left,right,mid,etc-->
+
+    <header class="header">
+        <!-- left class for logo -->
+        <div class="left">
+            <img src="img/img6.jpg" alt="my logo">
+            <div style="text-align: center;  font-size: 15px;">Ashmita Fitness </div>
+
+        </div>
+        <!-- mid class for navigation -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/tut1.html">Home</a></li>
+                <li><a href="/tut2.html">About us</a></li>
+                <li><a href="/tut10.html">Fitness Calculator</a></li>
+                <li><a href="/tut8.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right class for buttons -->
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of our city.</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                Name :<input type="text" name="myname" id="abc" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                Address:<input type="text" name="myadd" id="abc" placeholder="Enter your address">
+            </div>
+            <div class="formgroup">
+                E-mail: <input type="e-mail" name="myemail" id="abc" placeholder="Enter your email">
+            </div>
+            <div class="formgroup">
+                Age: <input type="number" name="myage" id="abc" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                Contact no: <input type="number" name="myno" id="abc" placeholder="Enter your mobile no">
+            </div>
+            <div class="formg">
+                Gender: Male <input type="radio"" name=" mygender" id="gender"> Female <input type="radio"
+                    name="mygender" id="gender">
+            </div><br>
+            <div class="formgroup" width="10%">
+                <button class="submit">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
